@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #F1FAEE;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h5, p {
+    margin:  0px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+header {
+	position: fixed;
+    padding: 5px;
+    background-color: #1D3557;
+    color: white;
+    width: 100%;
+    top: 0;
+}
+
+header div {
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    list-style: none;
+    left: 0;
+    background-color: #1D3557;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .hamburger, .close {
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    display: block;
+    cursor: pointer;
+}
+
+main {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    padding-top: 55px;
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    margin: 0 -500%;
+    padding: 25px 500%;
+}
+
+#bio p {
+    padding: 5px 0px;
+}
+
+#profile-text {
+    text-align: center;
+}
+
+.profile-image {
+    flex-grow: 2;
+    width: 35%;
+}
+
+.profile-image img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects {
+    background-color: #def7f8;
+    margin: 0 -500%;
+    padding: 25px 500%;
+}
+
+.center-section {
+    padding: 80px 0px 25px 0px;
+    margin-top: -55px;
+}
+
+.center-section h3 {
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    padding: 25px 0px;
+}
+
+.tile {
+    max-width: 550px;
+    flex-basis: 45%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.caption ul {
+    font-size: .9rem;
+    padding-left: 15px;
+}
+
+.caption {
+    padding: 10px;
+}
+
+.caption p {
+    padding: 10px 0px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #457B9D;
+    border-radius: 5px;
+    font-size: .9rem;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+}
+
+a {
+    transition: opacity 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+    opacity: 0.75;
+}
+
+.social-buttons a.button {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#contact {
+    background-color: white;
+    margin: 0 -500%;
+    padding: 25px 500%;
+}
+
+#contact p {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    padding: 5px;
+    background-color: #1D3557;
+    color: white;
+}
+
+footer div {
+    max-width: 1250px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    .profile-image {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+.menu {
+    visibility: visible;
+    opacity: 100%;
+    top: 0;
+    left: auto;
+    background: none;
+    width: auto;
+    padding: 0;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+    nav .hamburger, .close {
+        display: none;
+    }
+
+    .grid {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    #bio {
+        flex-direction: row;
+    }
+
+#profile-text {
+    text-align: inherit;
+}
+
+    .profile-image {
+        order: 2;
+        width: 45%;
+    }
+
+    .profile-image img {
+        margin-right: inherit;
+    }
+}
